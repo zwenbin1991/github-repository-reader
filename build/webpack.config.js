@@ -11,7 +11,7 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     // 打包入口文件
     entry: {
-        app: path.resolve(__dirname, '../src/app.vue')
+        main: path.resolve(__dirname, '../src/main.js')
     },
 
     // 打包后的文件信息(路径、带hash文件名、)
@@ -68,6 +68,6 @@ module.exports = {
             inject: true
         }),
 
-        // 热启动: 应用于开发环境下，监控目录或文件，有变化时自动打包、刷新浏览器，只更新修改的，提高构建的
+        // 热启动: 应用于开发环境下，监控目录或文件，有变化时自动打包、刷新浏览器，只更新修改的，提高构建的效率
     ]
 };
